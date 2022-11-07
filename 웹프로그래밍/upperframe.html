@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> seungwoo upper </title>
+        <style>
+            @font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{ font-family: Cafe24Shiningstar , serif;}
+        table { border-collapse: collapse;}
+        td {border:hidden;}
+        </style>
+        
+<SCRIPT language = "JavaScript">
+    today = new Date()
+    week = new Array("Sun","Mon","Tue","Wed","Thr","Fri","Sat")
+    day = week[today.getDay()]
+    document.write(today.getFullYear()+ "." +( today.getMonth()+1) + "." +today.getDate() + " "  +day  );
+</script>
+
+</head>
+
+
+    <body>
+        <p><a href=main.html>
+            <img src="image/namelogo1.png" padding-left=30 width=170 height=100 align="left">
+        </a></p>
+
+        <br>
+
+          <TABLE bgcolor='' border='1' align='Right' table frame='void'>
+           <TR>       
+              <TD font size=2 align='right'>ID</TD>
+               <TD> <input type='text' name='id' size=12 maxlength=11> </TD> 
+              <TD bgcolor='white' align='center'>
+                 <input type='submit' value=' login  ' style='background-color:cccccc'> </td>   </TR>
+          <TR>
+              <TD font size=2 align='right'>PassWord</TD>
+               <TD> <input type='password' name='pass' size=12 maxlength=10> </TD>
+              <TD bgcolor='white' align='center'>
+                 <input type='reset' value='cancel' style='background-color:ccccccr'> </TD>   	</TR>
+        </TABLE>
+    </body>
+</html>
