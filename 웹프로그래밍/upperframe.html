@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <base target = "_parent">
         <title> seungwoo upper </title>
         <style>
             @font-face {
@@ -14,23 +15,22 @@ body{ font-family: Cafe24Shiningstar , serif;}
         td {border:hidden;}
         </style>
         
-<SCRIPT language = "JavaScript">
-    today = new Date()
-    week = new Array("Sun","Mon","Tue","Wed","Thr","Fri","Sat")
-    day = week[today.getDay()]
-    document.write(today.getFullYear()+ "." +( today.getMonth()+1) + "." +today.getDate() + " "  +day  );
-</script>
+
 
 </head>
 
 
     <body>
-        <p><a href=main.html>
-            <img src="image/namelogo1.png" padding-left=30 width=170 height=100 align="left">
-        </a></p>
-
-        <br>
-
+        
+        <p><a href="main.html"><img src="image/namelogo1.png" padding-left=30 width=170 height=150 align="left"></a></p>
+        <br><br><br><br>
+        <audio autoplay controls><source src="audio/so sick.mp3" type="audio/mp3"></audio>
+        <SCRIPT language = "JavaScript">
+            today = new Date()
+            week = new Array("Sun","Mon","Tue","Wed","Thr","Fri","Sat")
+            day = week[today.getDay()]
+            document.write(today.getFullYear()+ "." +( today.getMonth()+1) + "." +today.getDate() + " "  +day  );
+        </script>
           <TABLE bgcolor='' border='1' align='Right' table frame='void'>
            <TR>       
               <TD font size=2 align='right'>ID</TD>
