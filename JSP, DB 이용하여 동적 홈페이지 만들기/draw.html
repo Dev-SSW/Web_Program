@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>그림판 만들기</title>
+	<link href="draw.css" type="text/css" rel="stylesheet">
+	<script src="draw.js"></script>
+
+    <style>
+        @font-face {
+         font-family: 'NEXON Lv1 Gothic OTF Bold';
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+     }
+         @font-face {
+         font-family: 'NEXON Lv1 Gothic OTF';
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+     }
+      H1,H2{font-family:NEXON Lv1 Gothic OTF Bold, serif;}
+      body{font-family:NEXON Lv1 Gothic OTF, serif;
+           font-size :10px;}
+    
+  
+  a:link { color: rgb(0, 0, 0); list-style: none; text-decoration:none;}
+  a:visited { color: rgb(0, 0, 0);}
+  a:hover { color: #1a4499 }
+  td{border:5px}
+  </style>   
+</head>
+
+
+<body onload="init()">
+<center>
+    <br><br><br><br>
+<h1> [DRAW] </h1>
+</center>
+<div style="border:5px outset #cfbdd3; border-radius: 0.5em;">
+<p style="font-size:12px; color:#78657c;">&nbsp;&nbsp;&nbsp;&#x2764;&nbsp;색과 두께를 선택한 후, 하단에 마우스로 그림을 그려보세요.</p>
+<hr>
+<div id="menu">
+	<div id="palette">
+		<div class="color" style="background-color:maroon"></div>
+		<div class="color" style="background-color:red"></div>
+		<div class="color" style="background-color:orange"></div>
+		<div class="color" style="background-color:yellow"></div>
+		<div class="color" style="background-color:olive"></div>
+		<div class="color" style="background-color:purple"></div>
+		<div class="color" style="background-color:fuchsia"></div>
+		<div class="color" style="background-color:white"></div>
+		<input type="color" id="colorInput" value="#00ff00">
+		<div class="color" style="background-color:lime; clear:both"></div>
+		<div class="color" style="background-color:green"></div>
+		<div class="color" style="background-color:navy"></div>
+		<div class="color" style="background-color:aqua"></div>
+		<div class="color" style="background-color:teal"></div>
+		<div class="color" style="background-color:black"></div>
+		<div class="color" style="background-color:silver"></div>
+		<div class="color" style="background-color:gray"></div>
+		<div class="color" style="background-color:white"></div>		
+		<div class="color" style="background-color:white"></div>		
+	</div>
+	<div id="linewidth">선 굵기
+		<input type="number" id="widthInput" value="1" min="0" max="20" step="1" 
+				onchange="lineWidth=this.value">
+	</div>
+	<div id="selectedColor" title="그리기 선 색입니다."></div>
+	<div id="mouselocation"></div>
+</div>
+<center>
+<canvas id="myCanvas" style="background-color:aliceblue" width="600" height="600">
+</canvas></center>
+
+</div></body>
+</html>
